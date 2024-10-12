@@ -39,13 +39,16 @@ export default function Navbar() {
     <div className='text-white/70 pt-3'>
 
         {/* Desktop Menu */}
-        <div className='hidden md:flex items-center px-4 py-2 mx-auto max-w-[400px]'>
+        <div className='hidden md:flex items-center justify-center px-4 py-2 mx-auto max-w-[600px]'>
             <ul className='flex flex-row space-x-8 p-4 '>
                 <li>
                     <Link href='#about' className='hover:text-orange-500 transition duration-300'>About Me</Link>
                 </li>
                 <li>
                     <Link href='#portfolio' className='hover:text-orange-500 transition duration-300'>Portfolio</Link>
+                </li>
+                <li>
+                    <Link href='#tools' className='hover:text-orange-500 transition duration-300'>Tools</Link>
                 </li>
                 <li>
                     <a href='#contact' className='group'>
@@ -81,6 +84,11 @@ export default function Navbar() {
                     whileTap={{scale: 0.9}}
                 >
                     <Link  href='#portfolio'>Portfolio</Link>
+                </motion.li>
+                <motion.li
+                    whileTap={{scale: 0.9}}
+                >
+                    <Link  href='#tools'>Tools</Link>
                 </motion.li>
                 <motion.button
                       whileTap={{ scale: 0.9, rotate: "2.5deg" }}

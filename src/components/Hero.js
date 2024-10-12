@@ -50,11 +50,11 @@ export default function Hero() {
   };
 
   return (
-    <div className="py-10 relative overflow-clip">
+    <div className="py-14 relative overflow-clip">
       <div>
         <div className="text-8xl font-bold text-center">
           <h1 className="text-[#98B4CE]">Hi, I'm</h1>
-          <h1 className="text-[#E48A57]">Chuka</h1>
+          <h1 className="text-[#E48A57] ">Chuka</h1>
         </div>   
 
         {/* Laptop image floating */}
