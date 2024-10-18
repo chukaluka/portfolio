@@ -1,11 +1,13 @@
 "use client";
 import React from 'react'
 import { FaTwitter, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
+import { motion } from 'framer-motion'
 
 
 export default function Footer() {
   return (
-    <div className='mt-12 text-white/70 py-8 max-w-[800px] mx-auto border-t border-gray-700 pt-4 flex justify-between items-center'>
+    <motion.div 
+    className='mt-12 text-white/70 py-8 max-w-[500px] md:max-w-[800px] mx-auto border-t border-gray-700 pt-4 flex justify-between items-center'>
       
       <h1 className='text-2xl font-bold'> Chuka David</h1>
 
@@ -24,6 +26,6 @@ export default function Footer() {
             <FaWhatsapp size={24}/>
         </a>
       </div>
-    </div>
+    </motion.div>
   )
 }

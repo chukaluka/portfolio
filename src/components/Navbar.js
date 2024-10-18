@@ -36,7 +36,12 @@ export default function Navbar() {
     }
 
   return (
-    <div className='text-white/70 pt-3'>
+    <motion.div
+    initial={{opacity: 0, x: 75}}
+    whileInView={{opacity: 1, x: 0}}
+    viewport={{once: true}}
+    transition={{duration: 1, delay: 0.25}}
+     className='text-white/70 pt-3'>
 
         {/* Desktop Menu */}
         <div className='hidden md:flex items-center justify-center px-4 py-2 mx-auto max-w-[600px]'>
@@ -99,6 +104,6 @@ export default function Navbar() {
             </ul>
         </motion.div>
         
-    </div>
+    </motion.div>
   )
 }

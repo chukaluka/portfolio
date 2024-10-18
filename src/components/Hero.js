@@ -50,7 +50,12 @@ export default function Hero() {
   };
 
   return (
-    <div className="py-14 relative overflow-clip">
+    <motion.div 
+    initial={{opacity: 0, y: 75}}
+    whileInView={{opacity: 1, y: 0}}
+    viewport={{once: true}}
+    transition={{duration: 1, delay: 0.25}}
+    className="py-14 relative overflow-clip">
       <div>
         <div className="text-8xl font-bold text-center">
           <h1 className="text-[#98B4CE]">Hi, I'm</h1>
@@ -59,7 +64,7 @@ export default function Hero() {
 
         {/* Laptop image floating */}
         <motion.div
-          className="absolute left-[100px] top-[80px]"
+          className="hidden md:block absolute left-[100px] top-[80px]"
           drag
           dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }} 
           whileDrag={{ scale: 1.2 }}
@@ -80,13 +85,12 @@ export default function Hero() {
             width="200"
             alt="cursor"
             draggable="false"
-            className=""
           />
         </motion.div>
 
         {/* Lightening image floating */}
         <motion.div
-          className="absolute right-[180px] top-[70px]"
+          className="hidden md:block absolute right-[180px] top-[70px]"
           drag
           dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
           whileDrag={{ scale: 1.2 }}
@@ -130,6 +134,6 @@ export default function Hero() {
           focused on providing the best experience for users.
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

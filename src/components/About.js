@@ -3,16 +3,21 @@ import React from 'react'
 import Image from 'next/image';
 import pic from '../assets/picpic.png'
 import Vector2 from '../assets/Vector2.svg'
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <div className='text-white/70 pl-28 pr-28 pt-20 mt-16'>
+    <motion.div 
+    initial={{opacity: 0, y: 75}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{duration: 0.5, delay: 0.25}}
+    className='text-white/70 pl-28 pr-28 pt-20 mt-16'>
         <div className='text-center font-bold text-8xl'>
             <h1>About Me</h1>
         </div>
 
         <div className='flex w-full items-center space-x-4'>
-            <div className='relative flex-1'>
+            <div className='relative flex-1 hidden md:block'>
                 <Image
                      src={Vector2} 
                      className="absolute inset-0 w-full h-full z-0 object-contain mt-16" 
@@ -26,10 +31,11 @@ export default function About() {
             </div>
             <div className='flex-1 p-4'>
                 <h1 className='text-white/70'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    A little about me.<br/> I'm just a guy who got into coding because it was cool to write codes and confuse people, I felt like a hacker. Unserious at first but I picked challenge from my close friends and people around me. I became self-taught and interned in different companies. I dabble a little in blockchain technology but I mostly code frontend and mobile apps. I am an AI and Robotics enthusiast, so that could be a future plan. Oh yeah, I also bagged a degree in computer science.<br/> 
+                    When I'm not coding, I'm either on the keyboard, watching a movie, playing football or strolling. There's more to these though, but i straight up just take leisure when I'm not coding.
                 </h1>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }

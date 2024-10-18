@@ -7,7 +7,11 @@ import { motion } from "framer-motion"
 
 export default function Contact() {
   return (
-    <div className='max-w-[1000px] mx-auto flex flex-col lg:flex-row text-white/70 mt-44 p-8 rounded-lg space-y-8 lg:space-y-0 lg:space-x-8' id='contact'>
+    <motion.div
+    initial={{opacity: 0, y: 75}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{duration: 0.5, delay: 0.25}}
+    className='max-w-[600px] md:max-w-[1000px] mx-auto flex flex-col lg:flex-row text-white/70 mt-44 p-8 rounded-lg space-y-8 lg:space-y-0 lg:space-x-8' id='contact'>
         
         <div className='flex justify-center items-center'>
             <ul className='space-y-4'>
@@ -47,6 +51,6 @@ export default function Contact() {
                 </motion.button>
             </form>
         </div>
-    </div>
+    </motion.div>
   )
 }
