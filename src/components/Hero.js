@@ -55,7 +55,7 @@ export default function Hero() {
     whileInView={{opacity: 1, y: 0}}
     viewport={{once: true}}
     transition={{duration: 1, delay: 0.25}}
-    className="py-14 relative overflow-clip">
+    className="mt-16 py-14 relative overflow-clip">
       <div>
         <div className="text-8xl font-bold text-center">
           <h1 className="text-[#98B4CE]">Hi, I'm</h1>
