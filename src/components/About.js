@@ -12,7 +12,7 @@ export default function About() {
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.25}}
     className='text-white/70 max-w-[400px] md:max-w-[800px] pt-20 mt-16'>
-        <div className='text-center font-bold text-3xl md:text-8xl'>
+        <div className='text-center font-bold text-6xl md:text-8xl'>
             <h1>About Me</h1>
         </div>
 

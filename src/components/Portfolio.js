@@ -18,24 +18,24 @@ export default function Portfolio() {
     transition={{duration: 0.5, delay: 0.25}}
     className='flex flex-col text-center justify-center text-white/70 mt-44 max-w-[600px] md:max-w-[950px] mx-auto'>
       <div>
-        <h1 className='text-8xl font-bold pb-2'>Portfolio</h1>
-        <h1 className='text-xl text-center'>Some of the works I have done</h1>
+        <h1 className='text-4xl md:text-8xl font-bold pb-2'>Portfolio</h1>
+        <h1 className='text-lg md:text-xl text-center'>Some of the works I have done</h1>
       </div>
 
       <motion.div
         initial={{opacity: 0, y: 75}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.5, delay: 0.25}}
-        className='flex flex-col md:flex-row w-full items-center space-x-4 mt-20'>
+        className='flex flex-col md:flex-row w-[400px] md:w-full items-center space-x-4 mt-20'>
         <div className='flex-1 p-4 text-white/70 text-left'>
           <h1 className='text-6xl pb-3'>01</h1>
           <h1 className='text-3xl pb-3 text-white'>Location Tracker</h1>
           <h1 className='pl-4 text-sm pb-5'>This web app tracks and stores users' real-time GPS coordinates which can also be useful for geographic data collecting, route optimization, and personal safety</h1>
           <h1 className='font-bold text-orange-500'> React, Tailwindcss, React-leaflet, Supabase </h1>
           <div className='border-b pt-2 max-w-[200px]'></div>
-          <div>
+          <div className='pb-5 md:pb-0'>
             <a href="https://tracker-location.vercel.app/" className=' text-sm text-white'>Link</a>
-            <a href="https://github.com/chukaluka/tracker" className='pl-5 text-sm text-white'>Git</a>
+            <a href="https://github.com/chukaluka/tracker" className=' pl-5 text-sm text-white'>Git</a>
           </div>
         </div>
         <div className='flex-1'>
