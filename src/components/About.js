@@ -11,13 +11,13 @@ export default function About() {
     initial={{opacity: 0, y: 75}}
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.25}}
-    className='text-white/70 max-w-[400px] md:max-w-[800px] pt-20 mt-16'>
+    className='text-white/70 max-w-[400px] md:max-w-[900px] mx-auto pt-20 mt-16'>
         <div className='text-center font-bold text-6xl md:text-8xl'>
             <h1>About Me</h1>
         </div>
 
         <div className='flex w-full items-center space-x-4'>
-            <div className='relative flex-1 hidden md:block'>
+            <div className='relative flex-1 hidden md:flex'>
                 <Image
                      src={Vector2} 
                      className="absolute inset-0 w-full h-full z-0 object-contain mt-16" 
