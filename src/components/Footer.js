@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export default function Footer() {
   return (
     <motion.div 
-    className='mt-12 text-white/70 py-8 max-w-[500px] md:max-w-[800px] mx-auto border-t border-gray-700 pt-4 flex justify-between items-center'>
+    className='mt-12 text-white/70 py-8 max-w-[300px] md:max-w-[800px] mx-auto border-t border-gray-700 pt-4 flex justify-between items-center'>
       
       <h1 className='text-2xl font-bold'> Chuka David</h1>
 

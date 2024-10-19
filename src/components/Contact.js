@@ -11,7 +11,7 @@ export default function Contact() {
     initial={{opacity: 0, y: 75}}
     whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5, delay: 0.25}}
-    className='max-w-[600px] md:max-w-[1000px] mx-auto flex flex-col lg:flex-row text-white/70 mt-44 p-8 rounded-lg space-y-8 lg:space-y-0 lg:space-x-8' id='contact'>
+    className='max-w-[330px] md:max-w-[1000px] mx-auto flex flex-col lg:flex-row text-white/70 mt-44 p-8 rounded-lg space-y-8 lg:space-y-0 lg:space-x-8' id='contact'>
         
         <div className='flex justify-center items-center'>
             <ul className='space-y-4'>
@@ -19,17 +19,17 @@ export default function Contact() {
                     <Image
                         src={phone}
                         alt='phone'
-                        className='h-[50px] w-auto'
+                        className='h-[20px] md:h-[50px] w-auto'
                     />
-                    <p className='text-xl'>+234 815 482 2682</p>
+                    <p className='text-sm md:text-xl'>+234 815 482 2682</p>
                 </li>
                 <li className='flex items-center'>
                     <Image
                         src={mail}
                         alt='mail'
-                        className='h-[50px] w-auto '
+                        className='h-[20px] md:h-[50px] w-auto '
                     />
-                    <p className='text-xl'>chukwukaokonkwo86@gmail.com</p>
+                    <p className='text-sm md:text-xl'>chukwukaokonkwo86@gmail.com</p>
                 </li>
             </ul>
         </div>
