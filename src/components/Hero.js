@@ -132,7 +132,7 @@ export default function Hero() {
               </motion.span>
             </AnimatePresence>{" "}
             developer, <br />
-            focused on providing the best experience for users.
+            focused on providing the best experience for you.
           </h1>
         </div>
       </div>
