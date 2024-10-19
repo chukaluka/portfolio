@@ -38,9 +38,9 @@ export default function Contact() {
             <h2 className='text-5xl font-bold text-orange-400 mb-4'>Let's Connect</h2>
             <p className='text-white/70 mb-6'>Send me a message</p>
             <form className='space-y-4' action='https://getform.io/f/bvrekdzb' method='POST'>
-                <div className='grid md:grid-cols-2 gap-4 w-full'>
-                    <input type="text" name="name" className='bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400' placeholder="Name"/>
-                    <input type="phone" name="phone" className='bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400' placeholder="Phone number"/>
+                <div className='grid md:grid-cols-2 gap-4'>
+                    <input type="text" name="name" className='bg-black/70 rounded-xl w-full p-3 focus:outline-none focus:ring-2 focus:ring-orange-400' placeholder="Name"/>
+                    <input type="phone" name="phone" className='bg-black/70 rounded-xl p-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400' placeholder="Phone number"/>
                 </div>
                 <input type="email" name="email" className='bg-black/70 rounded-xl w-full p-3 focus:outline-none focus:ring-2 focus:ring-orange-400' placeholder="Email"/>
                 <textarea type='text' name='text' className='bg-black/70 w-full rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400' placeholder='Your Message...'/>
