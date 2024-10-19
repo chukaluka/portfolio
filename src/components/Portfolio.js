@@ -18,7 +18,7 @@ export default function Portfolio() {
     transition={{duration: 0.5, delay: 0.25}}
     className='flex flex-col text-center justify-center text-white/70 mt-44 max-w-[600px] md:max-w-[950px] mx-auto'>
       <div>
-        <h1 className='text-4xl md:text-8xl font-bold pb-2'>Portfolio</h1>
+        <h1 className='text-6xl md:text-8xl font-bold pb-2'>Portfolio</h1>
         <h1 className='text-lg md:text-xl text-center'>Some of the works I have done</h1>
       </div>
 
@@ -26,7 +26,7 @@ export default function Portfolio() {
         initial={{opacity: 0, y: 75}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.5, delay: 0.25}}
-        className='flex flex-col md:flex-row w-[400px] md:w-full items-center space-x-4 mt-20'>
+        className='flex flex-col md:flex-row max-w-[350px] md:w-full items-center space-x-4 mt-20'>
         <div className='flex-1 p-4 text-white/70 text-left'>
           <h1 className='text-6xl pb-3'>01</h1>
           <h1 className='text-3xl pb-3 text-white'>Location Tracker</h1>
