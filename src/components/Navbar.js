@@ -37,10 +37,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-    initial={{opacity: 0, x: 75}}
-    whileInView={{opacity: 1, x: 0}}
-    viewport={{once: true}}
-    transition={{duration: 1, delay: 0.25}}
+    
      className='text-white/70 pt-3'>
 
         {/* Desktop Menu */}
@@ -77,7 +74,7 @@ export default function Navbar() {
             animate={nav ? 'open' : 'closed'}
             variants={menuVariants}
             
-            className='fixed left-0 top-0 w-full z-40 bg-black/90'
+            className='fixed left-0 top-0 w-full z-40 bg-black/95'
         >
             <ul  className='text-4xl font-semibold my-24 text-center space-y-8'>
                 <motion.li

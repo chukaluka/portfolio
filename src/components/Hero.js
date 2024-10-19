@@ -117,21 +117,23 @@ export default function Hero() {
 
         {/* Alternating Text with Pop-Up and Out Effect */}
         <div className="text-center text-lg mx-auto mt-8 text-white/80">
-          I am a{" "}
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={textIndex} // Key to uniquely identify the changing text
-              variants={popUpVariant} // Animation variants for pop-up effect
-              initial="hidden" // Initial state is hidden
-              animate="visible" // Visible state triggers when the text enters
-              exit="exit" // Exit animation when the text leaves
-              className="text-[#E48A57] font-bold"
-            >
-              {texts[textIndex]} {/* Alternating Text */}
-            </motion.span>
-          </AnimatePresence>{" "}
-          developer, <br />
-          focused on providing the best experience for users.
+          <h1 className='pl-20 pr-20'>
+            I am a{" "}
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={textIndex} // Key to uniquely identify the changing text
+                variants={popUpVariant} // Animation variants for pop-up effect
+                initial="hidden" // Initial state is hidden
+                animate="visible" // Visible state triggers when the text enters
+                exit="exit" // Exit animation when the text leaves
+                className="text-[#E48A57] font-bold"
+              >
+                {texts[textIndex]} {/* Alternating Text */}
+              </motion.span>
+            </AnimatePresence>{" "}
+            developer, <br />
+            focused on providing the best experience for users.
+          </h1>
         </div>
       </div>
     </motion.div>
