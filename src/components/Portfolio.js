@@ -26,7 +26,7 @@ export default function Portfolio() {
         initial={{opacity: 0, y: 75}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.5, delay: 0.25}}
-        className='flex flex-col md:flex-row max-w-[350px] md:w-full items-center space-x-4 mt-20'>
+        className='flex flex-col md:flex-row max-w-[330px] md:w-full items-center space-x-4 mt-20'>
         <div className='flex-1 p-4 text-white/70 text-left'>
           <h1 className='text-6xl pb-3'>01</h1>
           <h1 className='text-3xl pb-3 text-white'>Location Tracker</h1>
@@ -49,7 +49,7 @@ export default function Portfolio() {
         initial={{opacity: 0, y: 75}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.5, delay: 0.25}}
-        className='flex flex-col md:flex-row-reverse w-full items-center space-x-4 mt-20'>
+        className='flex flex-col md:flex-row-reverse max-w-[330px] md:w-full items-center space-x-4 mt-20'>
         <div className='flex-1'>
             <Image
               src={portfolio}
@@ -72,7 +72,7 @@ export default function Portfolio() {
       initial={{opacity: 0, y: 75}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.5, delay: 0.25}}
-      className='flex flex-col md:flex-row w-full items-center space-x-4 mt-20'>
+      className='flex flex-col md:flex-row max-w-[330px] md:w-full items-center space-x-4 mt-20'>
         <div className='flex-1 p-4 text-white/70 text-left'>
           <h1 className='text-6xl pb-3'>03</h1>
           <h1 className='text-3xl pb-3 text-white'>Advice Generator App</h1>
@@ -95,7 +95,7 @@ export default function Portfolio() {
       initial={{opacity: 0, y: 75}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.5, delay: 0.25}}
-      className='flex flex-col md:flex-row w-full items-center space-x-4 mt-20'>
+      className='flex flex-col md:flex-row max-w-[330px] md:w-full items-center space-x-4 mt-20'>
         <div className='flex-1'>
             <Image
               src={cv}
@@ -119,7 +119,7 @@ export default function Portfolio() {
       initial={{opacity: 0, y: 75}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.5, delay: 0.25}}
-      className='flex flex-col md:flex-row w-full items-center space-x-4 mt-20'>
+      className='flex flex-col md:flex-row max-w-[330px] md:w-full items-center space-x-4 mt-20'>
         <div className='flex-1 p-4 text-white/70 text-left'>
           <h1 className='text-6xl pb-3'>05</h1>
           <h1 className='text-3xl pb-3 text-white'>Revent technologies</h1>
