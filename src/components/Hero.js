@@ -117,7 +117,7 @@ export default function Hero() {
 
         {/* Alternating Text with Pop-Up and Out Effect */}
         <div className="text-center text-lg mx-auto mt-8 text-white/80">
-          <h1 className='pl-20 pr-20'>
+          <h1 className='pl-14 pr-14'>
             I am a{" "}
             <AnimatePresence mode="wait">
               <motion.span
