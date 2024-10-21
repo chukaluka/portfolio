@@ -9,6 +9,7 @@
 
 html, body {
   background-color: rgb(0, 0, 27);
+  scroll-behavior: smooth;
 }
 
 .a-img {

@@ -1,5 +1,6 @@
 "use client";
 import React from 'react'
+import Link from 'next/link';
 import { FaTwitter, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion'
 
@@ -9,7 +10,9 @@ export default function Footer() {
     <motion.div 
     className='mt-12 text-white/70 py-8 max-w-[300px] md:max-w-[800px] mx-auto border-t border-gray-700 pt-4 flex justify-between items-center'>
       
-      <h1 className='text-2xl font-bold'> Chuka David</h1>
+      <Link href='#' className='text-2xl font-bold'>
+         Chuka David
+      </Link>
 
       <div className='flex space-x-6 mt-4'>
         <a href="https://x.com/chuka_luka" target="_blank" rel="noopener noreferrer" className='hover:text-gray-300'>
