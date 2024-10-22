@@ -1,7 +1,8 @@
 "use client";
 import React from 'react'
 import Link from 'next/link';
-import { FaTwitter, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 import { motion } from 'framer-motion'
 
 
@@ -16,7 +17,7 @@ export default function Footer() {
 
       <div className='flex space-x-6 mt-4'>
         <a href="https://x.com/chuka_luka" target="_blank" rel="noopener noreferrer" className='hover:text-gray-300'>
-            <FaTwitter size={24}/>
+            <BsTwitterX  size={24}/>
         </a>
         <a href="https://linkedin.com/in/chukwukaokonkwo" target="_blank" rel="noopener noreferrer" className='hover:text-gray-300'>
             <FaLinkedin size={24}/>
